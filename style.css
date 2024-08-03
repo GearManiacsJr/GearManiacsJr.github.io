@@ -559,7 +559,7 @@ html, body {
     }
 
     #logo-div{
-        margin-left: 70px;
+        margin-left: 100px;
     }
 }
 
@@ -741,7 +741,7 @@ html, body {
     
     #home-page-presentation {
         height: auto;
-        padding-top: 70px;
+        padding-top: 0px;
     }
 }
 
