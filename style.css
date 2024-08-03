@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #206F71;
+    --yellow: #F5EC26;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/*
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #183c44, #206F71);
+    border-radius: 5px;
+}
+*/
+
+
+#top-navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    z-index: 9;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+#logo-div {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-div p {
+    font-size: 30px;
+}
+
+#navigation-bar-options{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-left: auto;
+}
+
+#navigation-bar-options a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 16px;
+    transition: color 0.1s,
+    background-color 0.1s,padding 0.3s ease-in;
+}
+
+#navigation-bar-options a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    background-color: var(--yellow);
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.3s ease-out;
+}
+
+#navigation-bar-options a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+#home-page-presentation{
+    position: relative;
+    height: 100vh;
+    background-color: #206F71;
+    width: 100%;
+    padding-top: 70px;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#video-de-prezentare button{
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 14px 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#video-de-prezentare button:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+#left-content{
+    height: 100%;
+    width: 50%;
+    top: 150px;
+    left: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#small-description-about-gm{
+    width: 70%;
+    display: flex;
+    text-align: justify;
+}
+
+#video-de-prezentare svg{
+    height: 16px;
+}
+
+#motto{
+    width: 70%;
+}
+
+#video-de-prezentare{
+    margin-top: -30px;
+}
+
+#right-content{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-content img{
+    height: 550px;
+}
+
+#echipa{
+    min-height: 1000px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #183c44, var(--primary-color));
+    margin-bottom: 0; /* Remove any default or extra margin */
+}
+
+#membrii{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+}
+
+.membru-in-gm{
+    height: 400px;
+    width: 60%;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom right, var(--primary-color), #183c44);
+    margin-bottom: 10px; /* 20px gap between each member */
+    display: flex;
+    flex-direction: row;
+}
+
+.imagine-membru{
+    height: 100%;
+    width: 50%;
+}
+
+.imagine-membru img{
+    height: 100%;
+}
+
+.descriere-membru{
+    height: 100%;
+    width: 50%;
+    text-align: justify;
+}
+.even {
+    display: flex;
+    justify-content: end;
+}
+
+#despre-noi{
+    margin-top: 0;
+    height: 110vh;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#echipa-si-descriere img{
+    height: 500px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#echipa-si-descriere{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    margin-right: 100px;
+    margin-left: 100px;
+    gap: 20px;
+}
+
+#contact-div {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+#main-div-in-contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+#name-and-email {
+    display: flex;
+    gap: 20px;
+}
+
+#name-and-email .form-group {
+    flex: 1;
+}
+
+    #contact-form button {
+    padding: 10px 20px;
+    background-color: #206F71;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100px;
+}
+
+#button-div-for-trimite{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-form button:hover {
+    background-color: #183c44;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: none;
+    border-color: #206F71;
+    box-shadow: 0 0 5px rgba(32, 111, 113, 0.5);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #267578;
+    color: white;
+}
+.footer .left {
+    max-width: 500px;
+}
+.footer .left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #A9CF43;
+}
+.footer .left p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust the width and height for the size of the circle */
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white; /* Add a border color if needed */
+    padding: 10px;
+    margin-right: 5px; /* Adjust padding to create space around the SVG */
+}
+
+.footer .social-icons a:hover{
+    border: 2px solid #F5EC26;
+    box-shadow: 0 0 5px rgb(245, 236, 38, 0.5);
+}
+
+.footer .right {
+    text-align: left;
+}
+.footer .right p {
+    margin: 5px 0;
+}
+.footer .right p:first-of-type {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.footer .right p:last-of-type {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.left svg{
+    height: 20px;
+}
+
+#title-in-left{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* For mobile devices */
+
+
+
+.impar .imagine-membru img {
+    border-radius: 20px 0 0 20px; /* Apply border radius to specific corners */
+}
+
+.descriere-membru p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.descriere-membru h1{
+    margin-left: 20px;
+}
+
+.par .imagine-membru img{
+    border-radius: 0 20px 20px 0; /* Apply border radius to specific corners */
+}
+
+
+/* Mobile View */
+
+
+/* General Mobile Styles */
+
+/* Extra Small Devices (Phones) */
+
+
+
+.openbtn{
+    display: none;
+}
+
+
+
+
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 70px; /* Adjust based on your header height */
+    background-color: #183c44;
+    width: 200px;
+    height: 100vh;
+    width: 50%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;    
+    border-radius: 20px 0 0 20px;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Toggle mobile menu visibility */
+.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+
+
+
+/* Backdrop overlay for blur effect */
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    z-index: 999; /* Make sure it's above other content */
+    display: none; /* Hide by default */
+}
+
+/* When the mobile menu is active */
+.show-overlay {
+    display: block;
+}
+
+/* Ensure the mobile menu is on top of the overlay */
+.mobile-menu {
+    z-index: 1000; /* Ensure the mobile menu is above the overlay */
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #navigation-bar-options {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    #logo-div {
+        margin-left: 100px;
+    }
+}
+    
+
+@media screen and (max-width: 768px){
+    .openbtn{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        font-size: 30px;
+    }
+
+    #navigation-bar-options a{
+        display: none;
+    }
+
+    #logo-div{
+        margin-left: 70px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .footer .left h1 {
+        font-size: 18px;
+    }
+
+    .footer .left p,
+    .footer .right p {
+        font-size: 12px; 
+    }
+
+    .footer .social-icons a {
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .footer .left,
+    .footer .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer .left h1 {
+        font-size: 20px; 
+    }
+
+    .footer .left p {
+        font-size: 14px;
+    }
+
+    .footer .social-icons {
+        margin: 10px 0;
+    }
+
+    .footer .social-icons a {
+        font-size: 24px; 
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer .right p {
+        font-size: 14px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .membru-in-gm {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imagine-membru {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagine-membru img {
+        width: 100%;
+        height: auto;
+    }
+
+    .descriere-membru {
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .descriere-membru h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .impar .imagine-membru img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .par .imagine-membru img{
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #despre-noi {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #echipa-si-descriere {
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+
+    #echipa-si-descriere img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    #echipa-si-descriere p {
+        width: 90%; 
+        max-width: 800px; 
+        text-align: left;
+        margin: 0 auto; 
+    }
+
+    #titlul-din-despre-noi{
+        margin-top: 70px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #left-content {
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #right-content {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #right-content img {
+        width: 80%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    #small-description-about-gm {
+        width: 90%;
+    }
+
+    #motto {
+        width: 90%;
+    }
+
+    #video-de-prezentare {
+        margin-top: 10px;
+    }
+    
+    #home-page-presentation {
+        height: auto;
+    }
+}
+
+
+
+.scroll-container {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap; /* Keeps items on a single line */
+}
+
+.item {
+    display: inline-block; /* Keep items inline */
+    width: 400px; /* Increased width for each item */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 20px; /* Adjust the margin as needed */
+    border-radius: 20px; /* Rounded corners */
+    text-align: center; /* Center text inside the div */
+    vertical-align: top; /* Align items to the top */
+    padding: 5px; /* Reduced padding for less space within each item */
+    box-sizing: border-box; /* Ensure padding doesn't increase item size */
+}
+
+/* Container for the image to control its size */
+.image-container {
+    height: 400px; /* Increased height for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+/* Ensure images fill the container more effectively */
+.item-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+    border-radius: 10px; /* Slight border-radius for the image */
+}
+
+/* Row container adjustments */
+.row-in-evenimente {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the items in the row */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 20px; /* Space between items */
+    width: 100%;
+    height: auto;
+}
+
+.item-text {
+    color: #000;
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    .row-in-evenimente {
+        flex-direction: column;
+        align-items: center; /* Center items in the column */
+    }
+
+    .item {
+        height: 400px;
+        width: 90%; 
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .item-img p{
+        width: 100%; /* Ensure image fills the item container */
+        
+    }
+}
+
+
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60%;
+    height: 95%;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+    color: #000;
+}
+
+#popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 15;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.content-wrapper.blurred {
+    filter: blur(5px);
+}
+
+#closePopup{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 25px;
+}
