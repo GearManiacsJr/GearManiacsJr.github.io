@@ -430,4 +430,8 @@
         overflow: hidden;
         margin-bottom: 5px;
     }
+
+    #despre-noi {
+        margin-top: 0;
+    }
 }
