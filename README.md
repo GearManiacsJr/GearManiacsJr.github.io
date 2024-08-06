@@ -1,1 +1,0 @@
-# gearmaniacsjr.github.io
