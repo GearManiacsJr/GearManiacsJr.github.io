@@ -1,0 +1,433 @@
+/*First design*/
+
+/*iPad Air (820 x 1180)*/
+
+
+/*Cod pentru meniu - top nav bar*/
+@media screen and (max-width: 820px){
+    #logo-div{
+        margin-left: 40px;
+    } 
+
+    #navigation-bar-options {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu{
+        top: 0;
+        font-size: 25px;
+        gap: 30px;
+    }
+
+    .mobile-menu li a{
+        margin: 30px;
+    }
+}
+
+/*Cod pentru home page*/
+@media screen and (max-width: 820px){
+    #content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #left-content {
+        width: 80%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #right-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #right-content img {
+        width: 80%;
+        height: auto;
+        max-width: 500px;
+    }
+
+    #small-description-about-gm {
+        width: 90%;
+    }
+
+    #motto {
+        width: 90%;
+    }
+    
+    #home-page-presentation {
+        height: auto;
+    }
+}
+
+/*Despre noi*/
+@media screen and (max-width: 820px){
+    #despre-noi {
+        margin-top: -80px;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #echipa-si-descriere {
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+
+    #echipa-si-descriere img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px; 
+    }
+
+    #echipa-si-descriere p {
+        width: 90%; 
+        max-width: 800px; 
+        text-align: left;
+        margin: 0 auto; 
+    }
+}
+
+/*Echipă*/
+@media screen and (max-width: 820px){
+    .membru-in-gm {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imagine-membru {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagine-membru img {
+        width: 100%;
+        height: auto;
+    }
+
+    .descriere-membru {
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .descriere-membru h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .impar .imagine-membru img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .par .imagine-membru img{
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+/*Proiecte*/
+@media only screen and (max-width: 820px) {
+    .row-in-evenimente {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        height: 600px;
+        width: 100%; 
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .item-img p{
+        width: 100%;        
+    }
+
+    .item-text{
+        font-size: 25px;
+    }
+
+    .image-container {
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+}
+
+
+/*Second design*/
+
+
+/*iPad Pro (1366 x 1024)*/
+
+
+/*Cod pentru meniu - top nav bar*/
+@media screen and (max-width: 1024px){
+    #logo-div{
+        margin-left: 40px;
+    } 
+
+    #navigation-bar-options {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .mobile-menu{
+        top: 0;
+        font-size: 25px;
+        gap: 30px;
+    }
+
+    .mobile-menu li a{
+        margin: 30px;
+    }
+}
+
+/*Cod pentru home page*/
+@media screen and (max-width: 1024px){
+    #content {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    #left-content {
+        width: 80%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #right-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #right-content img {
+        width: 80%;
+        height: auto;
+        max-width: 500px;
+    }
+
+    #small-description-about-gm {
+        width: 90%;
+    }
+
+    #motto {
+        width: 90%;
+    }
+    
+    #home-page-presentation {
+        height: auto;
+    }
+}
+
+/*Despre noi*/
+@media screen and (max-width: 1024px){
+    #despre-noi {
+        margin-top: -80px;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    #echipa-si-descriere {
+        flex-direction: column; 
+        align-items: center; 
+        margin-right: 0; 
+        margin-left: 0; 
+    }
+
+    #echipa-si-descriere img {
+        width: 90%;
+        height: auto;
+        border-radius: 20px; 
+    }
+
+    #echipa-si-descriere p {
+        width: 90%; 
+        max-width: 800px; 
+        text-align: left;
+        margin: 0 auto; 
+    }
+}
+
+/*Echipă*/
+@media screen and (max-width: 1024px){
+
+    .membru-in-gm {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imagine-membru {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagine-membru img {
+        width: 100%;
+        height: auto;
+    }
+
+    .descriere-membru {
+        width: 100%;
+        text-align: justify;
+        padding: 20px;
+    }
+
+    .descriere-membru h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .impar .imagine-membru img {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .par .imagine-membru img{
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+/*Proiecte*/
+@media only screen and (max-width: 1024px) {
+    .row-in-evenimente {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item {
+        height: 600px;
+        width: 100%; 
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .item-img p{
+        width: 100%;        
+    }
+
+    .item-text{
+        font-size: 25px;
+    }
+
+    .image-container {
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+
+    .popup{
+        overflow-y: auto;
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 95%;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        border-radius: 10px;
+        color: #000;
+    }
+
+    #name-and-email{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    #logo-div{
+        margin-left: 70px;
+    } 
+
+
+
+
+    .row-in-evenimente {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        height: 400px;
+        width: 100%; 
+        display: flex;
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .item-img p{
+        width: 100%;        
+    }
+
+    .item-text{
+        font-size: 25px;
+    }
+
+    .image-container {
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-bottom: 5px;
+    }
+}

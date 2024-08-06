@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear Maniacs Junior</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div id="top-navigation-bar">
+            <div id="logo-div">
+                <p style="color: #F5EC26; margin-left: 5px;">Gear</p>
+                <p style="color: #183c44; margin-left: 5px;">Maniacs</p>
+            </div>
+            <div id="navigation-bar-options">
+                <a href="#acasa">Acasă</a>
+                <a href="#despre-noi">Despre noi</a>
+                <a href="#echipă">Echipă</a>
+                <a href="#proiecte">Proiecte</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="#acasa">Acasă</a></li>
+                    <li><a href="#despre-noi">Despre</a></li>
+                    <li><a href="#echipă">Echipă</a></li>
+                    <li><a href="#proiecte">Proiecte</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="blur-overlay" id="blurOverlay"></div>
+        </div>
+    </div>
+
+    <div id="acasa"></div>
+    <div id="home-page-presentation" style="box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);">
+        <div id="content">
+            <div id="left-content">
+                <div id="motto">
+                    <h1 style="font-size: 40px;">Fiecare problemă are o soluție construită de noi!</h1>
+                </div>
+                <div id="video-de-prezentare">
+                    <a href="https://www.youtube.com/@gearmaniacsjr" target="_blank" style="text-decoration: none;"><button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>Video de prezentare</button></a>
+                </div>
+                <div id="small-description-about-gm">
+                    <p>Suntem echipa de gimnaziu a Colegiului Național "Samuel von Brukenthal" din Sibiu și participăm la competiția de robotică First Lego League Challenge.</p>
+                </div>
+            </div>
+            <div id="right-content">
+                <img src="Imagini/gear-maniacs-junior-logo.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="despre-noi">
+        <div id="titlul-din-despre-noi">
+            <h1 style="color: black; text-align: center; font-weight: 400; text-decoration: underline; text-decoration-color: #206F71;">Despre noi</h1>
+        </div>
+        <div id="echipa-si-descriere">
+            <img src="Imagini/poză-de-echipă-gear-maniacs-junior.png"> 
+            <p style="display: flex; align-items: center;">Noi suntem echipa de robotică de gimnaziu a Colegiului Național „Samuel von Brukenthal”. Echipa noastră a fost înființată în anul 2020 (Sezonul Replay).<br><br> De atunci, noi membri s-au alăturat echipei, astfel, pasiunea pentru robotică a devenit mai puternică. Suntem o echipă formată din elevi pasionați de robotică, programare și inginerie.<br><br> Ne dorim să învățăm mereu lucruri noi și să ne punem la încercare abilitățile prin participarea la concursuri de robotică.</p> 
+        </div>
+    </div>
+
+    <br>
+    <div id="echipă" style="box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);">
+        <div id="membrii">
+            <div>
+                <h1 style="font-weight: 400;">Echipă</h1>
+            </div>
+            <div class="membru-in-gm impar" style="margin-top: 30px;">
+                <div class="imagine-membru">
+                    <img src="Imagini/poză-cu-tudor-model.jpg">
+                </div>
+                <div class="descriere-membru">
+                    <h1 style="font-weight: 400;">Tudor</h1>
+                    <p>Sit sint minima eum sint cupiditate eum facilis temporibus est pariatur dolores est nulla consequatur qui excepturi perspiciatis. Qui enim unde eos inventore molestiae sit odit exercitationem qui saepe provident.</p>
+                </div>
+            </div>
+            
+            <div class="membru-in-gm par">
+                <div class="descriere-membru">
+                    <h1 style="font-weight: 400;">Tudor</h1>
+                    <p>Sit sint minima eum sint cupiditate eum facilis temporibus est pariatur dolores est nulla consequatur qui excepturi perspiciatis. Qui enim unde eos inventore molestiae sit odit exercitationem qui saepe provident.</p>
+                </div>
+                <div class="imagine-membru even">
+                    <img src="Imagini/poză-cu-tudor-model.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: center; color: #000; text-decoration: underline; text-decoration-color: #206F71; font-weight: 400;" id="proiecte">Proiecte</h1>
+    <div class="scroll-container">
+        <div class="row-in-evenimente">
+            <div class="item" id="proiectul-robo-schools">
+                <div class="image-container">
+                    <img src="Imagini/robo-school.jpg" class="item-img" alt="Image 1">
+                </div>
+                <p class="item-text">Proiectul ROBO-SCHOOLS</p>
+            </div>
+            <div class="item">
+                <div class="image-container" id="proiectul-copii-pentru-copii">
+                    <img src="Imagini/proiect-copii-pentru-copii.jpg" class="item-img" alt="Image 2">
+                </div>
+                <p class="item-text">Proiectul "Copii pentru copii"</p>
+            </div>
+            <div class="item">
+                <div class="image-container" id="maraton">
+                    <img src="Imagini/marathon.png" class="item-img" alt="Image 3">
+                </div>
+                <p class="item-text">Maratonul Internțional al Sibiului</p>
+            </div>
+        </div>
+        <div class="row-in-evenimente">
+            <div class="item" id="arthub">
+                <div class="image-container">
+                    <img src="Imagini/arthub.png" class="item-img" alt="Image 3">
+                </div>
+                <p class="item-text">ArtHub</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h1 style="color: #000; text-align: center; text-decoration: underline; text-decoration-color: #206F71;">Contact</h1>
+        <div id="main-div-in-contact">
+            <form id="contact-form" action="#" method="post">
+                <div id="name-and-email">
+                    <div class="form-group">
+                        <label for="name">Nume:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subiect:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mesaj:</label>
+                    <textarea id="message" name="message" rows="5" required style="resize: vertical;"></textarea>
+                </div>
+                <div id="button-div-for-trimite">
+                    <button type="submit">Trimite</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer" style="margin-top: 50px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.7 );">
+        <div class="left">
+            <div id="title-in-left">
+                <p style="color: #F5EC26; font-size: 25px;">Gear</p>
+                <p style="color: #183c44; font-size: 25px; margin-left: 5px;">Maniacs</p>
+            </div>
+            <p>Fiecare problemă are o soluție<br> construită de noi!</p>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@gearmaniacsjr" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path fill="#ffffff" d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/gearmaniacsjr/" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="#ffffff" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="right">
+            <p>Contact</p>
+            <p>Colegiul National "Samuel von Brukenthal" Sibiu</p>
+            <p>Telefon: +40770169407<br>Email: gearmaniacsjr@gmail.com</p>
+        </div>
+    </div>
+    <footer style="background-color: #206F71; color: #ffffff; padding: 10px; text-align: center;">
+        <p>&copy; 2024 Gear Maniacs. Toate drepturile rezervate.</p>
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay"></div>
+
+    <div class="popup" id="popup1">
+        <span onclick="closePopup('popup1')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+        <h2 style="text-decoration: underline; text-decoration-color: #206F71;">Proiectul ROBO-SCHOOLS</h2>
+        <p>Proiectul ROBO-SCHOOLS are menirea de a educa technologic elevii de la școlile din Sibiu. Am vizitat parte școli din Sibiu, respectiv Școala Charlotte Dietrich, Colegiul Național Pedagogic Andrei Șaguna, Școala Gimnazială Nr. 2 și Școala Gimnazială "Ion Luca Caragiale".<br><br>Copii au avut posibilitatea de a fi inițiați în lumea vastă a roboticii. Elevii au învățat din ce părți este compus un robot, cum se programează unul și cum ar trebui să funcționeze. De asemenea, ei au învățat și noțiuni esențiale din robotică și s-au distrat la final, jucându-se fotbal cu roboții.</p>
+        <p>Poze din cadrul proiectului:</p>
+        <button><a href="https://drive.google.com/drive/folders/1IxWWghH0M08_uxIhmtpoduygDu24hcw5?usp=sharing" target="_blank">Vezi pozele</a></button>
+    </div>
+
+    <div class="popup" id="popup2">
+        <span onclick="closePopup('popup2')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+        <h2 style="text-decoration: underline; text-decoration-color: #206F71;">Proiectul "Copii pentru copii"</h2>
+        <p>În cadrul proiectului "Copii pentru copii" am strâns fonduri pentru Asociația Carl Wolff.<br> Vizitatorii evenimentului, colegii noștrii, părinții acestora și chiar profesorii s-au jucat unul contra altul fotbal cu roboții. Aceștia avut posibilitatea de a controla fiecare câte un robot și de a înscrie punte pentru a câștiga competiția.</p>
+        <p>Poze din cadrul evenimentului:</p>
+        <button><a href="https://drive.google.com/drive/folders/1F2jeMM9OUq4Rhltpal0wwI_dQsHF7-mu?usp=sharing" target="_blank">Vezi pozele</a></button>
+    </div>
+
+    <div class="popup" id="popup3">
+        <span onclick="closePopup('popup3')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+        <h2 style="text-decoration: underline; text-decoration-color: #206F71;">Maratonul Internațional al Sibiului</h2>
+        <p>Am participat la Maratonul Internațional al Sibiului pentru a stânge fonduri pentru noul kit de robotică al sezonului următor.<br>Am fost plăcut surpinși când am văzut câti colegi și câți părinți ne-au susținut cauza.</p>
+        <p>Poze din cadrul evenimentului:</p>
+        <button><a href="https://www.instagram.com/p/CsybeVzt-EV/?img_index=1" target="_blank">Vezi pozele</a></button>
+    </div>
+
+    <div class="popup" id="popup4" style="overflow-y: auto;">
+        <span onclick="closePopup('popup4')"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></span>
+        <h2>ArtHub</h2>
+        <p>Am realizat platforma Bruk Art Hub, o colectie a
+            manifestărilor artistice din școala noastră. Rolul platformei este
+            de a populariza evenimentele culturale ale școlii, a le stoca în
+            format accesibil și atractiv, adică multimedia, precum și a
+            încuraja elevii cu înclinații artistice să încarce tutoriale.
+            <br>Astfel, generațiile viitoare vor putea accesa istoricul
+            activităților desfășurate de către colegii lor mai mari.
+            Putem spune că platforma reprezintă o capsulă modernă a
+            timpului proiectată spre generațiile viitoare.
+            <br>La opționalele de teatru în limba romană, germană și
+            engleză colegii noștri exersează și prezintă piese de teatru.
+            <br>Învățăm dansuri populare săsești și dansăm pe scenele
+            festivalurilor locale și internaționale.
+            <br>Am brodat împreună cu profesorii noștri ouă decorative
+            de Paşti, folosind motive vechi, apoi le-am expus în cadrul unei
+            expoziții. 
+            <br>Ne-am inițiat în arta gătitului în cadrul parteneriatelor cu
+            alte școli, dar și în Saptămâna Altfel, când am preparat covrigi,
+            turtă dulce și clătite.
+            <br>În Săptămâna Verde școala a organizat o drumeție și un
+            concurs de fotografie cu tematica "Om versus natură". Puteți
+            admira câteva din fotografiile premiate.
+            <br>În fiecare an avem Concertul de Crăciun susținut în aula
+            școlii și la Biserica Evanghelică, unde se interpretează vocal și
+            instrumental melodii care încântă deopotrivă copiii, părinții și
+            profesorii.
+            Platforma reunește informații despre activitățiile noastre
+            culturale, caritabile și educative în format multimedia.
+            <br>Interviurile cu profesorii și impresiile despre utilitatea
+            platformei precum și despre ușurința navigării ei le găsiți în
+            Jurnalul echipei Gear maniacs jr.
+            <br>Rolul platformei în contextul digitalizării informației în
+            secolul 21 este indiscutabil.
+        </p>
+        <p>Poze din cadrul evenimentului:</p>
+        <button><a href="https://arthub.brukenthal.ro/" target="_blank">Vezi platforma</a></button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const blurOverlay = document.getElementById('blurOverlay');
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('show-menu');
+                blurOverlay.classList.toggle('show-overlay');
+            }
+
+            function closeMenu() {
+                mobileMenu.classList.remove('show-menu');
+                blurOverlay.classList.remove('show-overlay');
+            }
+
+            hamburgerMenu.addEventListener('click', toggleMenu);
+
+            document.addEventListener('click', (event) => {
+                if (!mobileMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+                    closeMenu();
+                }
+            });
+
+            // Close menu when clicking on a menu item
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+
+        document.querySelectorAll('#navigation-bar-options a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                const offset = 100;
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.getElementById('proiectul-robo-schools').addEventListener('click', function() {
+            openPopup('popup1');
+        });
+
+        document.getElementById('proiectul-copii-pentru-copii').addEventListener('click', function() {
+            openPopup('popup2');
+        });
+
+        document.getElementById('maraton').addEventListener('click', function() {
+            openPopup('popup3');
+        });
+
+        document.getElementById('arthub').addEventListener('click', function() {
+            openPopup('popup4');
+        });
+
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = 'block';
+            document.getElementById('popupOverlay').style.display = 'block';
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+            document.getElementById('popupOverlay').style.display = 'none';
+        }
+
+        document.getElementById('popupOverlay').addEventListener('click', function() {
+            document.querySelectorAll('.popup').forEach(popup => {
+                popup.style.display = 'none';
+            });
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
